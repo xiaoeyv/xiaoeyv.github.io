@@ -458,7 +458,7 @@
                 }
             }
             if (running == true)
-                xhr[id] = $.get("https://img.eebbk.top/data-waster-dummy" + Math.random(), function() {
+                xhr[id] = $.get("https://img.eebbk.top/data-waster-dummy?" + Math.random(), function() {
                     return download(id);
                 });
         };
