@@ -43,11 +43,15 @@
       </ul>
     </div>
     <div class="mdui-container">
-      <button id="open" class="mdui-btn mdui-color-pink-accent mdui-m-a-1">open</button>
-      <button id="close" class="mdui-btn mdui-color-pink-accent mdui-m-a-1">close</button>
-      <button id="toggle" class="mdui-btn mdui-color-pink-accent mdui-m-a-1">toggle</button>
-      <button id="getState" class="mdui-btn mdui-color-pink-accent mdui-m-a-1">getState</button>
+    <div class="mdui-toolbar">
+      <a id="open" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+      <span class="mdui-typo-title">Title</span>
+      <div class="mdui-toolbar-spacer"></div>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
     </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js">
     </script>
     <script>var $ = mdui.$;
@@ -63,37 +67,7 @@
       function() {
         inst.close();
       });
-
-      $('#toggle').on('click',
-      function() {
-        inst.toggle();
-      });
-
-      $('#getState').on('click',
-      function() {
-        mdui.alert(inst.getState());
-      });
-
-      // event
-      $('#drawer').on('open.mdui.drawer',
-      function() {
-        console.log('open');
-      });
-
-      $('#drawer').on('opened.mdui.drawer',
-      function() {
-        console.log('opened');
-      });
-
-      $('#drawer').on('close.mdui.drawer',
-      function() {
-        console.log('close');
-      });
-
-      $('#drawer').on('closed.mdui.drawer',
-      function() {
-        console.log('closed');
-      });</script>
+</script>
   </body>
 
 </html>
