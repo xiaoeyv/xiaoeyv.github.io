@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>这是一个默认界面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>云储</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
 </head>
-<body>
-	<a href="./ll/">流量消失器</a>
+<body class="mdui-drawer-body-left">
+    <!--创建工具栏-->
+    <div class="mdui-toolbar mdui-color-teal">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+        <span class="mdui-typo-title" style="font-weight: 400">云储</span>
+        <!--将两边分割开-->
+        <div class="mdui-toolbar-spacer"></div>
+        <button class="mdui-btn mdui-btn-dense mdui-ripple" onclick="window.location.href = './about.html'"><span class="mdui-typo-body-1" style="font-weight: 100">关于</span></button>
+    </div>
+    <!--定义侧边栏内容-->
+    <div class="mdui-drawer" id="left-drawer">
+    <!--li class="mdui-subheader">友情链接</li-->
+    <!--button class="mdui-btn" mdui-drawer-close>close</button-->
+    </div>
+    <center>
+        <img src="img.jpg" width="100%"></img>
+    </center>
+    <!--下载链接-->
+    
 </body>
 </html>
