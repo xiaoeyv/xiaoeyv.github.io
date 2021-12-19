@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>首页 - 4酷</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" />
+</head>
+<body class="mdui-drawer-body-left">
+	<div class="mdui-drawer" id="drawer">
+		<ul class="mdui-list">
+			<li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+				<a href="https://004.cool/" class="mdui-list-item-content">首页</a>
+			</li>
+			<li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe5c3;</i>
+				<a href="https://004.cool/ll/" class="mdui-list-item-content">流量消失器</a>
+			</li>
+			<li class="mdui-subheader">其他</li>
+			<li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+				<a href="https://004.cool/about.html" class="mdui-list-item-content">关于</div>
+			</li>
+		</ul>
+	</div>
+	<div class="mdui-toolbar mdui-color-teal"><a id="open" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a><span class="mdui-typo-title">4酷</span>
+		<div class="mdui-toolbar-spacer"></div><a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a><a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a><a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+	<script>
+	var $ = mdui.$;
+	var inst = new mdui.Drawer('#drawer');
+	$('#open').on('click', function () {
+		inst.open()
+	});
+	$('#close').on('click', function () {
+		inst.close()
+	});
+	</script>
+</body>
+</html>
